@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Scooter</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        width: 100%;
+        height: 100vh;
+        background-image: url('main.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: slider 15s infinite linear;
+    }
+    @keyframes slider{
+        0%{ background-image: url('main.png'); }
+        25%{ background-image: url('main2.png'); }
+        30%{ background-image: url('main3.png'); }
+        45%{ background-image: url('cover.jpg'); }
+
+    }
+    .navbar{
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+    }
+    .navbar ul li::after{
+        content: ' ';
+        height: 3px;
+        width: 0;
+        background: red;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+    }
+
+
+</style>
+<body>
+    <header>
+    <div class="banner">
+        <div class="navbar">
+        <img src="1.png" width="150px" class="logo">
+        <ul>
+            
+            <li><a href="#">About</a></li>
+            <li><a href="#">Book Now</a></li>
+            <li><a href="#">Customize Your Scooter</a></li>
+             <li><a href="#">Find Us</a></li>
+            <li><a href="#">Galaxy Stores</a></li>
+            <li><a href="#">Media & Blogs</a></li>
+            <li> <a href="#">Support</a></li>
+            <li> <a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<main>
+    <section>
+        <a href="#" class="button1">Test Drive</a>
+        <a href="#" class="button1">Specification</a>
+        <a href="#" class="button1">Buy Now</a>
+
+    </section>
+</main>
+    </header>
+</body>
+</html>
